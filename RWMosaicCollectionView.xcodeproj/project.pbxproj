@@ -8,12 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		817171171E77372C009EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171161E77372C009EDFE4 /* AppDelegate.swift */; };
-		817171191E77372C009EDFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171181E77372C009EDFE4 /* ViewController.swift */; };
 		8171711C1E77372C009EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8171711A1E77372C009EDFE4 /* Main.storyboard */; };
 		8171711E1E77372C009EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8171711D1E77372C009EDFE4 /* Assets.xcassets */; };
 		817171211E77372C009EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */; };
 		8171712C1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */; };
 		817171371E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */; };
+		817171451E773746009EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817171441E773746009EDFE4 /* Main.storyboard */; };
+		817171471E773755009EDFE4 /* Character_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 817171461E773755009EDFE4 /* Character_Data.plist */; };
+		817171491E77375B009EDFE4 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171481E77375B009EDFE4 /* Characters.swift */; };
+		8171714B1E773761009EDFE4 /* CharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171714A1E773761009EDFE4 /* CharactersCell.swift */; };
+		8171714D1E773765009EDFE4 /* CustomViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171714C1E773765009EDFE4 /* CustomViewLayout.swift */; };
+		8171714F1E773769009EDFE4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171714E1E773769009EDFE4 /* DetailViewController.swift */; };
+		817171511E773780009EDFE4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171501E773780009EDFE4 /* GradientView.swift */; };
+		817171531E773784009EDFE4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171521E773784009EDFE4 /* MasterViewController.swift */; };
+		817171551E773787009EDFE4 /* RoundedCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171541E773787009EDFE4 /* RoundedCharacterCell.swift */; };
+		817171741E7737B2009EDFE4 /* Ant.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171561E7737B2009EDFE4 /* Ant.png */; };
+		817171751E7737B2009EDFE4 /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171571E7737B2009EDFE4 /* Bear.png */; };
+		817171761E7737B2009EDFE4 /* Brain.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171581E7737B2009EDFE4 /* Brain.png */; };
+		817171771E7737B2009EDFE4 /* Cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171591E7737B2009EDFE4 /* Cat.png */; };
+		817171781E7737B2009EDFE4 /* Croc.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715A1E7737B2009EDFE4 /* Croc.png */; };
+		817171791E7737B2009EDFE4 /* Dinosaur_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715B1E7737B2009EDFE4 /* Dinosaur_1.png */; };
+		8171717A1E7737B2009EDFE4 /* Dinosaur_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715C1E7737B2009EDFE4 /* Dinosaur_2.png */; };
+		8171717B1E7737B2009EDFE4 /* Dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715D1E7737B2009EDFE4 /* Dog.png */; };
+		8171717C1E7737B2009EDFE4 /* Dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715E1E7737B2009EDFE4 /* Dragon.png */; };
+		8171717D1E7737B2009EDFE4 /* Fly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171715F1E7737B2009EDFE4 /* Fly.png */; };
+		8171717E1E7737B2009EDFE4 /* Frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171601E7737B2009EDFE4 /* Frog.png */; };
+		8171717F1E7737B2009EDFE4 /* Grandma.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171611E7737B2009EDFE4 /* Grandma.png */; };
+		817171801E7737B2009EDFE4 /* Koala.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171621E7737B2009EDFE4 /* Koala.png */; };
+		817171811E7737B2009EDFE4 /* Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171631E7737B2009EDFE4 /* Monkey.png */; };
+		817171821E7737B2009EDFE4 /* Mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171641E7737B2009EDFE4 /* Mouse.png */; };
+		817171831E7737B2009EDFE4 /* Ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171651E7737B2009EDFE4 /* Ninja.png */; };
+		817171841E7737B2009EDFE4 /* Panda_Paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171661E7737B2009EDFE4 /* Panda_Paddle.png */; };
+		817171851E7737B2009EDFE4 /* Pirahna.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171671E7737B2009EDFE4 /* Pirahna.png */; };
+		817171861E7737B2009EDFE4 /* RocketMouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171681E7737B2009EDFE4 /* RocketMouse.png */; };
+		817171871E7737B2009EDFE4 /* Shark_Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171691E7737B2009EDFE4 /* Shark_Ship.png */; };
+		817171881E7737B2009EDFE4 /* Snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716A1E7737B2009EDFE4 /* Snake.png */; };
+		817171891E7737B2009EDFE4 /* Space_Marine.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716B1E7737B2009EDFE4 /* Space_Marine.png */; };
+		8171718A1E7737B2009EDFE4 /* Space_Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716C1E7737B2009EDFE4 /* Space_Monkey.png */; };
+		8171718B1E7737B2009EDFE4 /* Space_Ship_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716D1E7737B2009EDFE4 /* Space_Ship_1.png */; };
+		8171718C1E7737B2009EDFE4 /* Space_Ship_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716E1E7737B2009EDFE4 /* Space_Ship_2.png */; };
+		8171718D1E7737B2009EDFE4 /* Space_Ship_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8171716F1E7737B2009EDFE4 /* Space_Ship_3.png */; };
+		8171718E1E7737B2009EDFE4 /* Wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171701E7737B2009EDFE4 /* Wolf.png */; };
+		8171718F1E7737B2009EDFE4 /* Yum_Fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171711E7737B2009EDFE4 /* Yum_Fish.png */; };
+		817171901E7737B2009EDFE4 /* Zombie_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171721E7737B2009EDFE4 /* Zombie_2.png */; };
+		817171911E7737B2009EDFE4 /* Zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171731E7737B2009EDFE4 /* Zombie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +74,6 @@
 /* Begin PBXFileReference section */
 		817171131E77372C009EDFE4 /* RWMosaicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWMosaicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817171161E77372C009EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		817171181E77372C009EDFE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8171711B1E77372C009EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8171711D1E77372C009EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817171201E77372C009EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +84,45 @@
 		817171321E77372C009EDFE4 /* RWMosaicCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWMosaicCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMosaicCollectionViewUITests.swift; sourceTree = "<group>"; };
 		817171381E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817171441E773746009EDFE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		817171461E773755009EDFE4 /* Character_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Character_Data.plist; sourceTree = "<group>"; };
+		817171481E77375B009EDFE4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		8171714A1E773761009EDFE4 /* CharactersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
+		8171714C1E773765009EDFE4 /* CustomViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayout.swift; sourceTree = "<group>"; };
+		8171714E1E773769009EDFE4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		817171501E773780009EDFE4 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		817171521E773784009EDFE4 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		817171541E773787009EDFE4 /* RoundedCharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCharacterCell.swift; sourceTree = "<group>"; };
+		817171561E7737B2009EDFE4 /* Ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ant.png; sourceTree = "<group>"; };
+		817171571E7737B2009EDFE4 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bear.png; sourceTree = "<group>"; };
+		817171581E7737B2009EDFE4 /* Brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brain.png; sourceTree = "<group>"; };
+		817171591E7737B2009EDFE4 /* Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cat.png; sourceTree = "<group>"; };
+		8171715A1E7737B2009EDFE4 /* Croc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Croc.png; sourceTree = "<group>"; };
+		8171715B1E7737B2009EDFE4 /* Dinosaur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dinosaur_1.png; sourceTree = "<group>"; };
+		8171715C1E7737B2009EDFE4 /* Dinosaur_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dinosaur_2.png; sourceTree = "<group>"; };
+		8171715D1E7737B2009EDFE4 /* Dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dog.png; sourceTree = "<group>"; };
+		8171715E1E7737B2009EDFE4 /* Dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon.png; sourceTree = "<group>"; };
+		8171715F1E7737B2009EDFE4 /* Fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fly.png; sourceTree = "<group>"; };
+		817171601E7737B2009EDFE4 /* Frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frog.png; sourceTree = "<group>"; };
+		817171611E7737B2009EDFE4 /* Grandma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grandma.png; sourceTree = "<group>"; };
+		817171621E7737B2009EDFE4 /* Koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koala.png; sourceTree = "<group>"; };
+		817171631E7737B2009EDFE4 /* Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monkey.png; sourceTree = "<group>"; };
+		817171641E7737B2009EDFE4 /* Mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mouse.png; sourceTree = "<group>"; };
+		817171651E7737B2009EDFE4 /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ninja.png; sourceTree = "<group>"; };
+		817171661E7737B2009EDFE4 /* Panda_Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panda_Paddle.png; sourceTree = "<group>"; };
+		817171671E7737B2009EDFE4 /* Pirahna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pirahna.png; sourceTree = "<group>"; };
+		817171681E7737B2009EDFE4 /* RocketMouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RocketMouse.png; sourceTree = "<group>"; };
+		817171691E7737B2009EDFE4 /* Shark_Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shark_Ship.png; sourceTree = "<group>"; };
+		8171716A1E7737B2009EDFE4 /* Snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snake.png; sourceTree = "<group>"; };
+		8171716B1E7737B2009EDFE4 /* Space_Marine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Marine.png; sourceTree = "<group>"; };
+		8171716C1E7737B2009EDFE4 /* Space_Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Monkey.png; sourceTree = "<group>"; };
+		8171716D1E7737B2009EDFE4 /* Space_Ship_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_1.png; sourceTree = "<group>"; };
+		8171716E1E7737B2009EDFE4 /* Space_Ship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_2.png; sourceTree = "<group>"; };
+		8171716F1E7737B2009EDFE4 /* Space_Ship_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_3.png; sourceTree = "<group>"; };
+		817171701E7737B2009EDFE4 /* Wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wolf.png; sourceTree = "<group>"; };
+		817171711E7737B2009EDFE4 /* Yum_Fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yum_Fish.png; sourceTree = "<group>"; };
+		817171721E7737B2009EDFE4 /* Zombie_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zombie_2.png; sourceTree = "<group>"; };
+		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zombie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +157,36 @@
 				8171712A1E77372C009EDFE4 /* RWMosaicCollectionViewTests */,
 				817171351E77372C009EDFE4 /* RWMosaicCollectionViewUITests */,
 				817171141E77372C009EDFE4 /* Products */,
+				817171561E7737B2009EDFE4 /* Ant.png */,
+				817171571E7737B2009EDFE4 /* Bear.png */,
+				817171581E7737B2009EDFE4 /* Brain.png */,
+				817171591E7737B2009EDFE4 /* Cat.png */,
+				8171715A1E7737B2009EDFE4 /* Croc.png */,
+				8171715B1E7737B2009EDFE4 /* Dinosaur_1.png */,
+				8171715C1E7737B2009EDFE4 /* Dinosaur_2.png */,
+				8171715D1E7737B2009EDFE4 /* Dog.png */,
+				8171715E1E7737B2009EDFE4 /* Dragon.png */,
+				8171715F1E7737B2009EDFE4 /* Fly.png */,
+				817171601E7737B2009EDFE4 /* Frog.png */,
+				817171611E7737B2009EDFE4 /* Grandma.png */,
+				817171621E7737B2009EDFE4 /* Koala.png */,
+				817171631E7737B2009EDFE4 /* Monkey.png */,
+				817171641E7737B2009EDFE4 /* Mouse.png */,
+				817171651E7737B2009EDFE4 /* Ninja.png */,
+				817171661E7737B2009EDFE4 /* Panda_Paddle.png */,
+				817171671E7737B2009EDFE4 /* Pirahna.png */,
+				817171681E7737B2009EDFE4 /* RocketMouse.png */,
+				817171691E7737B2009EDFE4 /* Shark_Ship.png */,
+				8171716A1E7737B2009EDFE4 /* Snake.png */,
+				8171716B1E7737B2009EDFE4 /* Space_Marine.png */,
+				8171716C1E7737B2009EDFE4 /* Space_Monkey.png */,
+				8171716D1E7737B2009EDFE4 /* Space_Ship_1.png */,
+				8171716E1E7737B2009EDFE4 /* Space_Ship_2.png */,
+				8171716F1E7737B2009EDFE4 /* Space_Ship_3.png */,
+				817171701E7737B2009EDFE4 /* Wolf.png */,
+				817171711E7737B2009EDFE4 /* Yum_Fish.png */,
+				817171721E7737B2009EDFE4 /* Zombie_2.png */,
+				817171731E7737B2009EDFE4 /* Zombie.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +204,19 @@
 			isa = PBXGroup;
 			children = (
 				817171161E77372C009EDFE4 /* AppDelegate.swift */,
-				817171181E77372C009EDFE4 /* ViewController.swift */,
+				817171521E773784009EDFE4 /* MasterViewController.swift */,
+				8171714E1E773769009EDFE4 /* DetailViewController.swift */,
+				817171481E77375B009EDFE4 /* Characters.swift */,
+				817171541E773787009EDFE4 /* RoundedCharacterCell.swift */,
+				8171714A1E773761009EDFE4 /* CharactersCell.swift */,
+				817171501E773780009EDFE4 /* GradientView.swift */,
+				8171714C1E773765009EDFE4 /* CustomViewLayout.swift */,
+				817171441E773746009EDFE4 /* Main.storyboard */,
 				8171711A1E77372C009EDFE4 /* Main.storyboard */,
 				8171711D1E77372C009EDFE4 /* Assets.xcassets */,
 				8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */,
 				817171221E77372C009EDFE4 /* Info.plist */,
+				817171461E773755009EDFE4 /* Character_Data.plist */,
 			);
 			path = RWMosaicCollectionView;
 			sourceTree = "<group>";
@@ -235,9 +349,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817171851E7737B2009EDFE4 /* Pirahna.png in Resources */,
+				817171811E7737B2009EDFE4 /* Monkey.png in Resources */,
+				8171717F1E7737B2009EDFE4 /* Grandma.png in Resources */,
+				8171717C1E7737B2009EDFE4 /* Dragon.png in Resources */,
+				817171801E7737B2009EDFE4 /* Koala.png in Resources */,
+				8171718A1E7737B2009EDFE4 /* Space_Monkey.png in Resources */,
+				817171761E7737B2009EDFE4 /* Brain.png in Resources */,
+				8171717B1E7737B2009EDFE4 /* Dog.png in Resources */,
+				817171901E7737B2009EDFE4 /* Zombie_2.png in Resources */,
 				817171211E77372C009EDFE4 /* LaunchScreen.storyboard in Resources */,
+				817171781E7737B2009EDFE4 /* Croc.png in Resources */,
+				8171717A1E7737B2009EDFE4 /* Dinosaur_2.png in Resources */,
+				8171718F1E7737B2009EDFE4 /* Yum_Fish.png in Resources */,
+				8171718B1E7737B2009EDFE4 /* Space_Ship_1.png in Resources */,
 				8171711E1E77372C009EDFE4 /* Assets.xcassets in Resources */,
+				817171861E7737B2009EDFE4 /* RocketMouse.png in Resources */,
+				8171718D1E7737B2009EDFE4 /* Space_Ship_3.png in Resources */,
+				817171911E7737B2009EDFE4 /* Zombie.png in Resources */,
+				817171771E7737B2009EDFE4 /* Cat.png in Resources */,
 				8171711C1E77372C009EDFE4 /* Main.storyboard in Resources */,
+				8171717E1E7737B2009EDFE4 /* Frog.png in Resources */,
+				817171871E7737B2009EDFE4 /* Shark_Ship.png in Resources */,
+				8171718E1E7737B2009EDFE4 /* Wolf.png in Resources */,
+				817171821E7737B2009EDFE4 /* Mouse.png in Resources */,
+				8171717D1E7737B2009EDFE4 /* Fly.png in Resources */,
+				817171741E7737B2009EDFE4 /* Ant.png in Resources */,
+				8171718C1E7737B2009EDFE4 /* Space_Ship_2.png in Resources */,
+				817171791E7737B2009EDFE4 /* Dinosaur_1.png in Resources */,
+				817171751E7737B2009EDFE4 /* Bear.png in Resources */,
+				817171841E7737B2009EDFE4 /* Panda_Paddle.png in Resources */,
+				817171881E7737B2009EDFE4 /* Snake.png in Resources */,
+				817171471E773755009EDFE4 /* Character_Data.plist in Resources */,
+				817171831E7737B2009EDFE4 /* Ninja.png in Resources */,
+				817171891E7737B2009EDFE4 /* Space_Marine.png in Resources */,
+				817171451E773746009EDFE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +408,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817171191E77372C009EDFE4 /* ViewController.swift in Sources */,
+				817171491E77375B009EDFE4 /* Characters.swift in Sources */,
+				8171714D1E773765009EDFE4 /* CustomViewLayout.swift in Sources */,
+				817171511E773780009EDFE4 /* GradientView.swift in Sources */,
+				817171551E773787009EDFE4 /* RoundedCharacterCell.swift in Sources */,
+				8171714F1E773769009EDFE4 /* DetailViewController.swift in Sources */,
 				817171171E77372C009EDFE4 /* AppDelegate.swift in Sources */,
+				817171531E773784009EDFE4 /* MasterViewController.swift in Sources */,
+				8171714B1E773761009EDFE4 /* CharactersCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
