@@ -21,6 +21,8 @@ class DetailViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
+    navigationController?.navigationBar.tintColor = .black
+    
     if let theCharacter = character {
       navigationItem.title = theCharacter.title
       descriptionLabel.text = theCharacter.description

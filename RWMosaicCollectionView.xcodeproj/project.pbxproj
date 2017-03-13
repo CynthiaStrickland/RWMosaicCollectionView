@@ -51,6 +51,7 @@
 		8171718F1E7737B2009EDFE4 /* Yum_Fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171711E7737B2009EDFE4 /* Yum_Fish.png */; };
 		817171901E7737B2009EDFE4 /* Zombie_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171721E7737B2009EDFE4 /* Zombie_2.png */; };
 		817171911E7737B2009EDFE4 /* Zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171731E7737B2009EDFE4 /* Zombie.png */; };
+		817171971E774239009EDFE4 /* MosaicViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171961E774239009EDFE4 /* MosaicViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		817171131E77372C009EDFE4 /* RWMosaicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWMosaicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		817171161E77372C009EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		817171161E77372C009EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RWMosaicCollectionView/AppDelegate.swift; sourceTree = "<group>"; };
 		8171711D1E77372C009EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RWMosaicCollectionView/Assets.xcassets; sourceTree = "<group>"; };
 		817171201E77372C009EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817171221E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RWMosaicCollectionView/Info.plist; sourceTree = "<group>"; };
@@ -84,7 +85,7 @@
 		817171381E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817171441E773746009EDFE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		817171461E773755009EDFE4 /* Character_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Character_Data.plist; path = RWMosaicCollectionView/Character_Data.plist; sourceTree = "<group>"; };
-		817171481E77375B009EDFE4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		817171481E77375B009EDFE4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Characters.swift; path = RWMosaicCollectionView/Characters.swift; sourceTree = "<group>"; };
 		8171714A1E773761009EDFE4 /* CharactersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
 		8171714C1E773765009EDFE4 /* CustomViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayout.swift; sourceTree = "<group>"; };
 		8171714E1E773769009EDFE4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 		817171711E7737B2009EDFE4 /* Yum_Fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yum_Fish.png; path = ../Yum_Fish.png; sourceTree = "<group>"; };
 		817171721E7737B2009EDFE4 /* Zombie_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie_2.png; path = ../Zombie_2.png; sourceTree = "<group>"; };
 		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie.png; path = ../Zombie.png; sourceTree = "<group>"; };
+		817171961E774239009EDFE4 /* MosaicViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		8171710A1E77372C009EDFE4 = {
 			isa = PBXGroup;
 			children = (
+				817171161E77372C009EDFE4 /* AppDelegate.swift */,
 				817171151E77372C009EDFE4 /* RWMosaicCollectionView */,
 				8171712A1E77372C009EDFE4 /* RWMosaicCollectionViewTests */,
 				817171351E77372C009EDFE4 /* RWMosaicCollectionViewUITests */,
@@ -159,7 +162,6 @@
 				8171711D1E77372C009EDFE4 /* Assets.xcassets */,
 				8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */,
 				817171221E77372C009EDFE4 /* Info.plist */,
-				817171461E773755009EDFE4 /* Character_Data.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,10 +178,10 @@
 		817171151E77372C009EDFE4 /* RWMosaicCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				817171161E77372C009EDFE4 /* AppDelegate.swift */,
-				817171941E77393B009EDFE4 /* VIEW */,
-				817171931E773936009EDFE4 /* LAYOUT */,
 				817171921E77392B009EDFE4 /* CONTROLLERS */,
+				817171931E773936009EDFE4 /* LAYOUT */,
+				817171981E774256009EDFE4 /* DATA */,
+				817171941E77393B009EDFE4 /* VIEW */,
 			);
 			path = RWMosaicCollectionView;
 			sourceTree = "<group>";
@@ -205,8 +207,8 @@
 		817171921E77392B009EDFE4 /* CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
-				8171714E1E773769009EDFE4 /* DetailViewController.swift */,
 				817171521E773784009EDFE4 /* MasterViewController.swift */,
+				8171714E1E773769009EDFE4 /* DetailViewController.swift */,
 			);
 			name = CONTROLLERS;
 			sourceTree = "<group>";
@@ -216,8 +218,8 @@
 			children = (
 				817171501E773780009EDFE4 /* GradientView.swift */,
 				8171714A1E773761009EDFE4 /* CharactersCell.swift */,
-				817171481E77375B009EDFE4 /* Characters.swift */,
 				817171541E773787009EDFE4 /* RoundedCharacterCell.swift */,
+				817171961E774239009EDFE4 /* MosaicViewLayout.swift */,
 				8171714C1E773765009EDFE4 /* CustomViewLayout.swift */,
 			);
 			name = LAYOUT;
@@ -267,6 +269,16 @@
 			);
 			name = IMAGES;
 			path = RWMosaicCollectionView;
+			sourceTree = "<group>";
+		};
+		817171981E774256009EDFE4 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+				817171481E77375B009EDFE4 /* Characters.swift */,
+				817171461E773755009EDFE4 /* Character_Data.plist */,
+			);
+			name = DATA;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +451,7 @@
 			files = (
 				817171491E77375B009EDFE4 /* Characters.swift in Sources */,
 				8171714D1E773765009EDFE4 /* CustomViewLayout.swift in Sources */,
+				817171971E774239009EDFE4 /* MosaicViewLayout.swift in Sources */,
 				817171511E773780009EDFE4 /* GradientView.swift in Sources */,
 				817171551E773787009EDFE4 /* RoundedCharacterCell.swift in Sources */,
 				8171714F1E773769009EDFE4 /* DetailViewController.swift in Sources */,
@@ -690,6 +703,7 @@
 				8171713D1E77372C009EDFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8171713E1E77372C009EDFE4 /* Build configuration list for PBXNativeTarget "RWMosaicCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +712,7 @@
 				817171401E77372C009EDFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		817171411E77372C009EDFE4 /* Build configuration list for PBXNativeTarget "RWMosaicCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +721,7 @@
 				817171431E77372C009EDFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

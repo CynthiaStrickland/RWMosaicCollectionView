@@ -8,6 +8,9 @@
 
 import UIKit
 
+let masterId = "MasterToDetail"
+let characterId = "CharacterCell"
+
 class MasterViewController: UICollectionViewController {
   
   let charactersData = Characters.loadCharacters()
@@ -16,12 +19,14 @@ class MasterViewController: UICollectionViewController {
     super.viewDidLoad()
     
     navigationController!.isToolbarHidden = true
-    let layout = collectionViewLayout as! CustomViewLayout
+    let layout = collectionViewLayout as! MosaicViewLayout
     layout.numberOfColumns = 2
+    layout.delegate = self    //Add reference to delegate property
+    
   }
     
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "MasterToDetail" {
+    if segue.identifier == masterId {
       let detailViewController = segue.destination as! DetailViewController
       detailViewController.character = sender as? Characters
     }
@@ -39,7 +44,7 @@ extension MasterViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as! RoundedCharacterCell
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: characterId, for: indexPath) as! RoundedCharacterCell
     
     let character = charactersData[indexPath.item]
     cell.character = character 
@@ -51,8 +56,18 @@ extension MasterViewController {
 extension MasterViewController {
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       let character = charactersData[indexPath.item]
-      performSegue(withIdentifier: "MasterToDetail", sender: character)
+      performSegue(withIdentifier: masterId, sender: character)
   }
+}
+
+//MARK:   MOSAIC LAYOUT DELEGATE
+
+extension MasterViewController : MosaicLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
+        let random = arc4random_uniform(4) + 1
+        return CGFloat(random * 100)      //This returns a random height for items .. for now
+        
+    }
 }
 
 
