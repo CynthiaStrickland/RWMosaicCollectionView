@@ -100,4 +100,8 @@ class MosaicViewLayout: UICollectionViewLayout {
         }
         return layoutAttributes
     }
+    
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        return cache[indexPath.item]
+    }
 }

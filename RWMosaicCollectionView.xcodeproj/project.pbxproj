@@ -52,6 +52,7 @@
 		817171911E7737B2009EDFE4 /* Zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171731E7737B2009EDFE4 /* Zombie.png */; };
 		817171971E774239009EDFE4 /* MosaicViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171961E774239009EDFE4 /* MosaicViewLayout.swift */; };
 		818884881E7757F500EFDD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818884871E7757F500EFDD0B /* Main.storyboard */; };
+		8188848E1E775D5C00EFDD0B /* CarouselViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188848D1E775D5C00EFDD0B /* CarouselViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie.png; path = ../Zombie.png; sourceTree = "<group>"; };
 		817171961E774239009EDFE4 /* MosaicViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicViewLayout.swift; sourceTree = "<group>"; };
 		818884871E7757F500EFDD0B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		8188848D1E775D5C00EFDD0B /* CarouselViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselViewLayout.swift; path = ../CarouselViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				8171714A1E773761009EDFE4 /* CharactersCell.swift */,
 				817171541E773787009EDFE4 /* RoundedCharacterCell.swift */,
 				817171961E774239009EDFE4 /* MosaicViewLayout.swift */,
+				8188848D1E775D5C00EFDD0B /* CarouselViewLayout.swift */,
 				8171714C1E773765009EDFE4 /* CustomViewLayout.swift */,
 			);
 			name = LAYOUT;
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8188848E1E775D5C00EFDD0B /* CarouselViewLayout.swift in Sources */,
 				817171491E77375B009EDFE4 /* Characters.swift in Sources */,
 				8171714D1E773765009EDFE4 /* CustomViewLayout.swift in Sources */,
 				817171971E774239009EDFE4 /* MosaicViewLayout.swift in Sources */,
