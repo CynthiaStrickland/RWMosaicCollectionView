@@ -1,9 +1,9 @@
 //
 //  CustomViewLayout.swift
-//  Character Collector
+//  RWMosaicCollectionView
 //
-//  Created by Michael Briscoe on 2/6/17.
-//  Copyright © 2017 Razeware, LLC. All rights reserved.
+//  Created by Cynthia Strickland on 3/13/17.
+//  Copyright © 2017 Fenix Designz. All rights reserved.
 //
 
 import UIKit

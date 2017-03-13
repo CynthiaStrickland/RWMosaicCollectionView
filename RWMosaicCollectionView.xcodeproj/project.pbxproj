@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		817171171E77372C009EDFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171161E77372C009EDFE4 /* AppDelegate.swift */; };
-		8171711C1E77372C009EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8171711A1E77372C009EDFE4 /* Main.storyboard */; };
 		8171711E1E77372C009EDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8171711D1E77372C009EDFE4 /* Assets.xcassets */; };
 		817171211E77372C009EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */; };
 		8171712C1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */; };
@@ -74,10 +73,9 @@
 /* Begin PBXFileReference section */
 		817171131E77372C009EDFE4 /* RWMosaicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWMosaicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817171161E77372C009EDFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8171711B1E77372C009EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8171711D1E77372C009EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8171711D1E77372C009EDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RWMosaicCollectionView/Assets.xcassets; sourceTree = "<group>"; };
 		817171201E77372C009EDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		817171221E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817171221E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RWMosaicCollectionView/Info.plist; sourceTree = "<group>"; };
 		817171271E77372C009EDFE4 /* RWMosaicCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWMosaicCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMosaicCollectionViewTests.swift; sourceTree = "<group>"; };
 		8171712D1E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +83,7 @@
 		817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMosaicCollectionViewUITests.swift; sourceTree = "<group>"; };
 		817171381E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817171441E773746009EDFE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		817171461E773755009EDFE4 /* Character_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Character_Data.plist; sourceTree = "<group>"; };
+		817171461E773755009EDFE4 /* Character_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Character_Data.plist; path = RWMosaicCollectionView/Character_Data.plist; sourceTree = "<group>"; };
 		817171481E77375B009EDFE4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		8171714A1E773761009EDFE4 /* CharactersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
 		8171714C1E773765009EDFE4 /* CustomViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayout.swift; sourceTree = "<group>"; };
@@ -93,36 +91,36 @@
 		817171501E773780009EDFE4 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		817171521E773784009EDFE4 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		817171541E773787009EDFE4 /* RoundedCharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCharacterCell.swift; sourceTree = "<group>"; };
-		817171561E7737B2009EDFE4 /* Ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ant.png; sourceTree = "<group>"; };
-		817171571E7737B2009EDFE4 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bear.png; sourceTree = "<group>"; };
-		817171581E7737B2009EDFE4 /* Brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brain.png; sourceTree = "<group>"; };
-		817171591E7737B2009EDFE4 /* Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cat.png; sourceTree = "<group>"; };
-		8171715A1E7737B2009EDFE4 /* Croc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Croc.png; sourceTree = "<group>"; };
-		8171715B1E7737B2009EDFE4 /* Dinosaur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dinosaur_1.png; sourceTree = "<group>"; };
-		8171715C1E7737B2009EDFE4 /* Dinosaur_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dinosaur_2.png; sourceTree = "<group>"; };
-		8171715D1E7737B2009EDFE4 /* Dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dog.png; sourceTree = "<group>"; };
-		8171715E1E7737B2009EDFE4 /* Dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon.png; sourceTree = "<group>"; };
-		8171715F1E7737B2009EDFE4 /* Fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fly.png; sourceTree = "<group>"; };
-		817171601E7737B2009EDFE4 /* Frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frog.png; sourceTree = "<group>"; };
-		817171611E7737B2009EDFE4 /* Grandma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grandma.png; sourceTree = "<group>"; };
-		817171621E7737B2009EDFE4 /* Koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koala.png; sourceTree = "<group>"; };
-		817171631E7737B2009EDFE4 /* Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monkey.png; sourceTree = "<group>"; };
-		817171641E7737B2009EDFE4 /* Mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mouse.png; sourceTree = "<group>"; };
-		817171651E7737B2009EDFE4 /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ninja.png; sourceTree = "<group>"; };
-		817171661E7737B2009EDFE4 /* Panda_Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panda_Paddle.png; sourceTree = "<group>"; };
-		817171671E7737B2009EDFE4 /* Pirahna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pirahna.png; sourceTree = "<group>"; };
-		817171681E7737B2009EDFE4 /* RocketMouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RocketMouse.png; sourceTree = "<group>"; };
-		817171691E7737B2009EDFE4 /* Shark_Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shark_Ship.png; sourceTree = "<group>"; };
-		8171716A1E7737B2009EDFE4 /* Snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snake.png; sourceTree = "<group>"; };
-		8171716B1E7737B2009EDFE4 /* Space_Marine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Marine.png; sourceTree = "<group>"; };
-		8171716C1E7737B2009EDFE4 /* Space_Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Monkey.png; sourceTree = "<group>"; };
-		8171716D1E7737B2009EDFE4 /* Space_Ship_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_1.png; sourceTree = "<group>"; };
-		8171716E1E7737B2009EDFE4 /* Space_Ship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_2.png; sourceTree = "<group>"; };
-		8171716F1E7737B2009EDFE4 /* Space_Ship_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Space_Ship_3.png; sourceTree = "<group>"; };
-		817171701E7737B2009EDFE4 /* Wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wolf.png; sourceTree = "<group>"; };
-		817171711E7737B2009EDFE4 /* Yum_Fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yum_Fish.png; sourceTree = "<group>"; };
-		817171721E7737B2009EDFE4 /* Zombie_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zombie_2.png; sourceTree = "<group>"; };
-		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zombie.png; sourceTree = "<group>"; };
+		817171561E7737B2009EDFE4 /* Ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ant.png; path = ../Ant.png; sourceTree = "<group>"; };
+		817171571E7737B2009EDFE4 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bear.png; path = ../Bear.png; sourceTree = "<group>"; };
+		817171581E7737B2009EDFE4 /* Brain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brain.png; path = ../Brain.png; sourceTree = "<group>"; };
+		817171591E7737B2009EDFE4 /* Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat.png; path = ../Cat.png; sourceTree = "<group>"; };
+		8171715A1E7737B2009EDFE4 /* Croc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Croc.png; path = ../Croc.png; sourceTree = "<group>"; };
+		8171715B1E7737B2009EDFE4 /* Dinosaur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dinosaur_1.png; path = ../Dinosaur_1.png; sourceTree = "<group>"; };
+		8171715C1E7737B2009EDFE4 /* Dinosaur_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dinosaur_2.png; path = ../Dinosaur_2.png; sourceTree = "<group>"; };
+		8171715D1E7737B2009EDFE4 /* Dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dog.png; path = ../Dog.png; sourceTree = "<group>"; };
+		8171715E1E7737B2009EDFE4 /* Dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dragon.png; path = ../Dragon.png; sourceTree = "<group>"; };
+		8171715F1E7737B2009EDFE4 /* Fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fly.png; path = ../Fly.png; sourceTree = "<group>"; };
+		817171601E7737B2009EDFE4 /* Frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Frog.png; path = ../Frog.png; sourceTree = "<group>"; };
+		817171611E7737B2009EDFE4 /* Grandma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grandma.png; path = ../Grandma.png; sourceTree = "<group>"; };
+		817171621E7737B2009EDFE4 /* Koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Koala.png; path = ../Koala.png; sourceTree = "<group>"; };
+		817171631E7737B2009EDFE4 /* Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Monkey.png; path = ../Monkey.png; sourceTree = "<group>"; };
+		817171641E7737B2009EDFE4 /* Mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mouse.png; path = ../Mouse.png; sourceTree = "<group>"; };
+		817171651E7737B2009EDFE4 /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ninja.png; path = ../Ninja.png; sourceTree = "<group>"; };
+		817171661E7737B2009EDFE4 /* Panda_Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Panda_Paddle.png; path = ../Panda_Paddle.png; sourceTree = "<group>"; };
+		817171671E7737B2009EDFE4 /* Pirahna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pirahna.png; path = ../Pirahna.png; sourceTree = "<group>"; };
+		817171681E7737B2009EDFE4 /* RocketMouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RocketMouse.png; path = ../RocketMouse.png; sourceTree = "<group>"; };
+		817171691E7737B2009EDFE4 /* Shark_Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shark_Ship.png; path = ../Shark_Ship.png; sourceTree = "<group>"; };
+		8171716A1E7737B2009EDFE4 /* Snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Snake.png; path = ../Snake.png; sourceTree = "<group>"; };
+		8171716B1E7737B2009EDFE4 /* Space_Marine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Space_Marine.png; path = ../Space_Marine.png; sourceTree = "<group>"; };
+		8171716C1E7737B2009EDFE4 /* Space_Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Space_Monkey.png; path = ../Space_Monkey.png; sourceTree = "<group>"; };
+		8171716D1E7737B2009EDFE4 /* Space_Ship_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Space_Ship_1.png; path = ../Space_Ship_1.png; sourceTree = "<group>"; };
+		8171716E1E7737B2009EDFE4 /* Space_Ship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Space_Ship_2.png; path = ../Space_Ship_2.png; sourceTree = "<group>"; };
+		8171716F1E7737B2009EDFE4 /* Space_Ship_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Space_Ship_3.png; path = ../Space_Ship_3.png; sourceTree = "<group>"; };
+		817171701E7737B2009EDFE4 /* Wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wolf.png; path = ../Wolf.png; sourceTree = "<group>"; };
+		817171711E7737B2009EDFE4 /* Yum_Fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yum_Fish.png; path = ../Yum_Fish.png; sourceTree = "<group>"; };
+		817171721E7737B2009EDFE4 /* Zombie_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie_2.png; path = ../Zombie_2.png; sourceTree = "<group>"; };
+		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie.png; path = ../Zombie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +154,86 @@
 				817171151E77372C009EDFE4 /* RWMosaicCollectionView */,
 				8171712A1E77372C009EDFE4 /* RWMosaicCollectionViewTests */,
 				817171351E77372C009EDFE4 /* RWMosaicCollectionViewUITests */,
+				817171951E773940009EDFE4 /* IMAGES */,
 				817171141E77372C009EDFE4 /* Products */,
+				8171711D1E77372C009EDFE4 /* Assets.xcassets */,
+				8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */,
+				817171221E77372C009EDFE4 /* Info.plist */,
+				817171461E773755009EDFE4 /* Character_Data.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		817171141E77372C009EDFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				817171131E77372C009EDFE4 /* RWMosaicCollectionView.app */,
+				817171271E77372C009EDFE4 /* RWMosaicCollectionViewTests.xctest */,
+				817171321E77372C009EDFE4 /* RWMosaicCollectionViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		817171151E77372C009EDFE4 /* RWMosaicCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				817171161E77372C009EDFE4 /* AppDelegate.swift */,
+				817171941E77393B009EDFE4 /* VIEW */,
+				817171931E773936009EDFE4 /* LAYOUT */,
+				817171921E77392B009EDFE4 /* CONTROLLERS */,
+			);
+			path = RWMosaicCollectionView;
+			sourceTree = "<group>";
+		};
+		8171712A1E77372C009EDFE4 /* RWMosaicCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */,
+				8171712D1E77372C009EDFE4 /* Info.plist */,
+			);
+			path = RWMosaicCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		817171351E77372C009EDFE4 /* RWMosaicCollectionViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */,
+				817171381E77372C009EDFE4 /* Info.plist */,
+			);
+			path = RWMosaicCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		817171921E77392B009EDFE4 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				8171714E1E773769009EDFE4 /* DetailViewController.swift */,
+				817171521E773784009EDFE4 /* MasterViewController.swift */,
+			);
+			name = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		817171931E773936009EDFE4 /* LAYOUT */ = {
+			isa = PBXGroup;
+			children = (
+				817171501E773780009EDFE4 /* GradientView.swift */,
+				8171714A1E773761009EDFE4 /* CharactersCell.swift */,
+				817171481E77375B009EDFE4 /* Characters.swift */,
+				817171541E773787009EDFE4 /* RoundedCharacterCell.swift */,
+				8171714C1E773765009EDFE4 /* CustomViewLayout.swift */,
+			);
+			name = LAYOUT;
+			sourceTree = "<group>";
+		};
+		817171941E77393B009EDFE4 /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				817171441E773746009EDFE4 /* Main.storyboard */,
+			);
+			name = VIEW;
+			sourceTree = "<group>";
+		};
+		817171951E773940009EDFE4 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
 				817171561E7737B2009EDFE4 /* Ant.png */,
 				817171571E7737B2009EDFE4 /* Bear.png */,
 				817171581E7737B2009EDFE4 /* Brain.png */,
@@ -188,55 +265,8 @@
 				817171721E7737B2009EDFE4 /* Zombie_2.png */,
 				817171731E7737B2009EDFE4 /* Zombie.png */,
 			);
-			sourceTree = "<group>";
-		};
-		817171141E77372C009EDFE4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				817171131E77372C009EDFE4 /* RWMosaicCollectionView.app */,
-				817171271E77372C009EDFE4 /* RWMosaicCollectionViewTests.xctest */,
-				817171321E77372C009EDFE4 /* RWMosaicCollectionViewUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		817171151E77372C009EDFE4 /* RWMosaicCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				817171161E77372C009EDFE4 /* AppDelegate.swift */,
-				817171521E773784009EDFE4 /* MasterViewController.swift */,
-				8171714E1E773769009EDFE4 /* DetailViewController.swift */,
-				817171481E77375B009EDFE4 /* Characters.swift */,
-				817171541E773787009EDFE4 /* RoundedCharacterCell.swift */,
-				8171714A1E773761009EDFE4 /* CharactersCell.swift */,
-				817171501E773780009EDFE4 /* GradientView.swift */,
-				8171714C1E773765009EDFE4 /* CustomViewLayout.swift */,
-				817171441E773746009EDFE4 /* Main.storyboard */,
-				8171711A1E77372C009EDFE4 /* Main.storyboard */,
-				8171711D1E77372C009EDFE4 /* Assets.xcassets */,
-				8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */,
-				817171221E77372C009EDFE4 /* Info.plist */,
-				817171461E773755009EDFE4 /* Character_Data.plist */,
-			);
+			name = IMAGES;
 			path = RWMosaicCollectionView;
-			sourceTree = "<group>";
-		};
-		8171712A1E77372C009EDFE4 /* RWMosaicCollectionViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */,
-				8171712D1E77372C009EDFE4 /* Info.plist */,
-			);
-			path = RWMosaicCollectionViewTests;
-			sourceTree = "<group>";
-		};
-		817171351E77372C009EDFE4 /* RWMosaicCollectionViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */,
-				817171381E77372C009EDFE4 /* Info.plist */,
-			);
-			path = RWMosaicCollectionViewUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +398,6 @@
 				8171718D1E7737B2009EDFE4 /* Space_Ship_3.png in Resources */,
 				817171911E7737B2009EDFE4 /* Zombie.png in Resources */,
 				817171771E7737B2009EDFE4 /* Cat.png in Resources */,
-				8171711C1E77372C009EDFE4 /* Main.storyboard in Resources */,
 				8171717E1E7737B2009EDFE4 /* Frog.png in Resources */,
 				817171871E7737B2009EDFE4 /* Shark_Ship.png in Resources */,
 				8171718E1E7737B2009EDFE4 /* Wolf.png in Resources */,
@@ -451,20 +480,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8171711A1E77372C009EDFE4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8171711B1E77372C009EDFE4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				817171201E77372C009EDFE4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = RWMosaicCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
