@@ -22,7 +22,8 @@ class MasterViewController: UICollectionViewController {
     let layout = collectionViewLayout as! MosaicViewLayout
     layout.numberOfColumns = 2
     layout.delegate = self    //Add reference to delegate property
-    
+    collectionView!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
+    layout.cellPadding = 5
   }
     
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -66,6 +67,7 @@ extension MasterViewController : MosaicLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
         let random = arc4random_uniform(4) + 1
         return CGFloat(random * 100)      //This returns a random height for items .. for now
+        
         
     }
 }

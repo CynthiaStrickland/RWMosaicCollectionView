@@ -16,13 +16,17 @@ protocol MosaicLayoutDelegate {
 class MosaicViewLayout: UICollectionViewLayout {
     
     var numberOfColumns = 0
+    var cellPadding: CGFloat = 0
+
     var delegate: MosaicLayoutDelegate!   //This property holds a reference to the Mosaic Layout Delegate
     
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
     fileprivate var contentHeight: CGFloat = 0
     fileprivate var width: CGFloat {
         get {
-            return collectionView!.bounds.width
+            let insets = collectionView!.contentInset
+            return collectionView!.bounds.width - (insets.left + insets.right)
+            //return collectionView!.bounds.width
         }
     }
     
@@ -46,8 +50,9 @@ class MosaicViewLayout: UICollectionViewLayout {
                 let indexPath = IndexPath(item: item, section: 0)
                 let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)  //This queries delegate for calculated height of cell
                 let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
+                let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-                attributes.frame = frame
+                attributes.frame = insetFrame
                 cache.append(attributes)
                 contentHeight = max(contentHeight, frame.maxY)
                 yOffsets[column] = yOffsets[column] + height
