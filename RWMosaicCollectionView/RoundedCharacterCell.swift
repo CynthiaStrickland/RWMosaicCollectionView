@@ -9,9 +9,12 @@
 import UIKit
 
 class RoundedCharacterCell: UICollectionViewCell {
-  @IBOutlet weak var characterImage: UIImageView!
-  @IBOutlet weak var characterTitle: UILabel!
-  @IBOutlet weak var characterInfo: UILabel!
+    @IBOutlet weak var characterImage: UIImageView!
+    @IBOutlet weak var characterTitle: UILabel!
+    @IBOutlet weak var characterInfo: UILabel!
+    
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
+
   
   var character: Characters? {
     didSet {
@@ -38,5 +41,9 @@ class RoundedCharacterCell: UICollectionViewCell {
     characterInfo.text = ""
   }
   
-
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        let attributes = layoutAttributes as! MosaicLayoutAttributes
+        imageViewHeightConstraint.constant = attributes.imageHeight
+    }
 }

@@ -8,30 +8,54 @@
 
 import UIKit
 
-
 protocol MosaicLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat
+    
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+    
+    func collectionView(_ collectionView: UICollectionView, heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+}
+
+class MosaicLayoutAttributes: UICollectionViewLayoutAttributes {
+    
+    var imageHeight: CGFloat = 0
+    
+    override func copy(with zone: NSZone?) -> Any {
+        let copy = super.copy(with: zone) as! MosaicLayoutAttributes
+        copy.imageHeight = imageHeight
+        return copy
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        if let attributes = object as? MosaicLayoutAttributes {
+            if attributes.imageHeight == imageHeight {
+                return super.isEqual(object)
+            }
+        }
+        return false
+    }
 }
 
 class MosaicViewLayout: UICollectionViewLayout {
     
+    var delegate: MosaicLayoutDelegate!
     var numberOfColumns = 0
     var cellPadding: CGFloat = 0
-
-    var delegate: MosaicLayoutDelegate!   //This property holds a reference to the Mosaic Layout Delegate
     
-    fileprivate var cache = [UICollectionViewLayoutAttributes]()
+    var cache = [MosaicLayoutAttributes]()
     fileprivate var contentHeight: CGFloat = 0
     fileprivate var width: CGFloat {
         get {
             let insets = collectionView!.contentInset
             return collectionView!.bounds.width - (insets.left + insets.right)
-            //return collectionView!.bounds.width
         }
     }
     
     override var collectionViewContentSize : CGSize {
         return CGSize(width: width, height: contentHeight)
+    }
+    
+    override class var layoutAttributesClass : AnyClass {
+        return MosaicLayoutAttributes.self
     }
     
     override func prepare() {
@@ -48,11 +72,17 @@ class MosaicViewLayout: UICollectionViewLayout {
             var column = 0
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
-                let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)  //This queries delegate for calculated height of cell
+                
+                let width = columnWidth - (cellPadding * 2)
+                let imageHeight = delegate.collectionView(collectionView!, heightForImageAtIndexPath: indexPath, withWidth: width)
+                let descriptionHeight = delegate.collectionView(collectionView!, heightForDescriptionAtIndexPath: indexPath, withWidth: width)
+                let height = cellPadding + imageHeight + descriptionHeight + cellPadding
+                
                 let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
                 let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-                let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+                let attributes = MosaicLayoutAttributes(forCellWith: indexPath)
                 attributes.frame = insetFrame
+                attributes.imageHeight = imageHeight
                 cache.append(attributes)
                 contentHeight = max(contentHeight, frame.maxY)
                 yOffsets[column] = yOffsets[column] + height
@@ -70,7 +100,4 @@ class MosaicViewLayout: UICollectionViewLayout {
         }
         return layoutAttributes
     }
-    
-    
-    
 }

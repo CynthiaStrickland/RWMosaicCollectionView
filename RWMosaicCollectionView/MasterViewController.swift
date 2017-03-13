@@ -7,24 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
 
 let masterId = "MasterToDetail"
 let characterId = "CharacterCell"
 
 class MasterViewController: UICollectionViewController {
-  
-  let charactersData = Characters.loadCharacters()
-      
-  override func viewDidLoad() {
-    super.viewDidLoad()
     
-    navigationController!.isToolbarHidden = true
-    let layout = collectionViewLayout as! MosaicViewLayout
-    layout.numberOfColumns = 2
-    layout.delegate = self    //Add reference to delegate property
-    collectionView!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
-    layout.cellPadding = 5
-  }
+    let charactersData = Characters.loadCharacters()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController!.isToolbarHidden = true
+        collectionView!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
+        
+        let layout = collectionViewLayout as! MosaicViewLayout
+        layout.delegate = self
+        layout.numberOfColumns = 2
+        layout.cellPadding = 5
+        
+    }
     
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == masterId {
@@ -63,13 +66,31 @@ extension MasterViewController {
 
 //MARK:   MOSAIC LAYOUT DELEGATE
 
-extension MasterViewController : MosaicLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
-        let random = arc4random_uniform(4) + 1
-        return CGFloat(random * 100)      //This returns a random height for items .. for now
+extension MasterViewController: MosaicLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
         
+        let character = charactersData[indexPath.item]
+        let image = UIImage(named: character.name)
+        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+        let rect = AVMakeRect(aspectRatio: image!.size, insideRect: boundingRect)
         
+        return rect.height
     }
+    
+    func collectionView(_ collectionView: UICollectionView, heightForDescriptionAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        let character = charactersData[indexPath.item]
+        let descriptionHeight = heightForText(character.description, width: width-24)
+        let height = 4 + 17 + 4 + descriptionHeight + 12
+        return height
+    }
+    
+    func heightForText(_ text: String, width: CGFloat) -> CGFloat {
+        let font = UIFont.systemFont(ofSize: 10)
+        let rect = NSString(string: text).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        return ceil(rect.height)
+    }
+    
+    
 }
 
 

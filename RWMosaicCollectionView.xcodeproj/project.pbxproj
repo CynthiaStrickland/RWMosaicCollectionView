@@ -12,7 +12,6 @@
 		817171211E77372C009EDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8171711F1E77372C009EDFE4 /* LaunchScreen.storyboard */; };
 		8171712C1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171712B1E77372C009EDFE4 /* RWMosaicCollectionViewTests.swift */; };
 		817171371E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */; };
-		817171451E773746009EDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817171441E773746009EDFE4 /* Main.storyboard */; };
 		817171471E773755009EDFE4 /* Character_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 817171461E773755009EDFE4 /* Character_Data.plist */; };
 		817171491E77375B009EDFE4 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171481E77375B009EDFE4 /* Characters.swift */; };
 		8171714B1E773761009EDFE4 /* CharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8171714A1E773761009EDFE4 /* CharactersCell.swift */; };
@@ -52,6 +51,7 @@
 		817171901E7737B2009EDFE4 /* Zombie_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171721E7737B2009EDFE4 /* Zombie_2.png */; };
 		817171911E7737B2009EDFE4 /* Zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 817171731E7737B2009EDFE4 /* Zombie.png */; };
 		817171971E774239009EDFE4 /* MosaicViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817171961E774239009EDFE4 /* MosaicViewLayout.swift */; };
+		818884881E7757F500EFDD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818884871E7757F500EFDD0B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		817171321E77372C009EDFE4 /* RWMosaicCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWMosaicCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		817171361E77372C009EDFE4 /* RWMosaicCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMosaicCollectionViewUITests.swift; sourceTree = "<group>"; };
 		817171381E77372C009EDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		817171441E773746009EDFE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		817171461E773755009EDFE4 /* Character_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Character_Data.plist; path = RWMosaicCollectionView/Character_Data.plist; sourceTree = "<group>"; };
 		817171481E77375B009EDFE4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Characters.swift; path = RWMosaicCollectionView/Characters.swift; sourceTree = "<group>"; };
 		8171714A1E773761009EDFE4 /* CharactersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		817171721E7737B2009EDFE4 /* Zombie_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie_2.png; path = ../Zombie_2.png; sourceTree = "<group>"; };
 		817171731E7737B2009EDFE4 /* Zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie.png; path = ../Zombie.png; sourceTree = "<group>"; };
 		817171961E774239009EDFE4 /* MosaicViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicViewLayout.swift; sourceTree = "<group>"; };
+		818884871E7757F500EFDD0B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +228,7 @@
 		817171941E77393B009EDFE4 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
-				817171441E773746009EDFE4 /* Main.storyboard */,
+				818884871E7757F500EFDD0B /* Main.storyboard */,
 			);
 			name = VIEW;
 			sourceTree = "<group>";
@@ -412,6 +412,7 @@
 				817171771E7737B2009EDFE4 /* Cat.png in Resources */,
 				8171717E1E7737B2009EDFE4 /* Frog.png in Resources */,
 				817171871E7737B2009EDFE4 /* Shark_Ship.png in Resources */,
+				818884881E7757F500EFDD0B /* Main.storyboard in Resources */,
 				8171718E1E7737B2009EDFE4 /* Wolf.png in Resources */,
 				817171821E7737B2009EDFE4 /* Mouse.png in Resources */,
 				8171717D1E7737B2009EDFE4 /* Fly.png in Resources */,
@@ -424,7 +425,6 @@
 				817171471E773755009EDFE4 /* Character_Data.plist in Resources */,
 				817171831E7737B2009EDFE4 /* Ninja.png in Resources */,
 				817171891E7737B2009EDFE4 /* Space_Marine.png in Resources */,
-				817171451E773746009EDFE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

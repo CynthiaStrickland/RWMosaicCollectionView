@@ -60,15 +60,4 @@ class CustomViewLayout: UICollectionViewLayout {
     }
     return layoutAttributes
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
 }
